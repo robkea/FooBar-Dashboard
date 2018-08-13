@@ -1,0 +1,165 @@
+body {
+    height: 2000px;
+    background-color:#009DDC;
+    font-family: 'Coming Soon', cursive;
+
+}
+h1, h2, {
+    color: #424F46;
+}
+/*LOGO*/
+#logo {
+    font-size: 3em;
+    text-align: center;
+    margin: 40px;
+    color: black; 
+}
+
+/*GENERAL INFORMATION*/
+#generalInformation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    color: black;
+    background-color:#70D1FE;
+    margin-bottom: 10px;
+    height: 240px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;  
+}
+
+#generalInformation h2 {
+    color: black; 
+}
+
+.title {
+    grid-column: 1/ span 4;
+    text-align: center;
+    margin: 15px; 
+}
+
+/*BARTENDERS INFORMATION*/
+.bartenders {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color:  #70D1FE;
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 10px; 
+    border-style: solid;
+    border-width: 2px;
+    border-color: black; 
+}
+
+
+/*TAPS INFORMATION*/
+#tapsInformation {
+    background-color: #70D1FE;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+  
+.tapsStatus {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+}
+  
+.tapsStatusWrap {
+    display: grid; }
+
+.capacity {
+    width: 100px;
+    height: 250px;
+    background-color: white;
+    transform: rotate(180deg);
+    margin: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black; 
+}
+  
+.tapsLevel {
+    display: grid;
+    width: 100px;
+    height: 250px;
+    background-color: #FED41D;
+}
+  
+.beer-tap-name {
+    font-size: 20px;
+    padding: 10px; 
+}
+
+/*BEER INFO*/
+#beerInformation {
+    display: grid;
+    text-align: center;
+}
+  
+.beerInfo {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(10, 1fr); 
+}
+  
+.individualBeerInfo {
+    background-color: #70D1FE;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 10px;
+    display: grid;
+}
+  
+.individualBeerInfo h1,
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 5px; 
+}
+  
+.beerTemplate {
+    display: grid; 
+}
+  
+.boxLabel {
+    height: 200px;
+    width: auto; }
+
+  
+.beerLabel {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black; 
+}
+  
+.modalContent {
+    background-color: #FED41D;
+    border-style: double;
+    border-width: 2px;
+    border-color: black;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #FED41D;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    height: 30px;
+    margin: auto; 
+}
+  
+.hide {
+    display: none; 
+}

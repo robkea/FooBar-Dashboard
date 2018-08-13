@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FooBar Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+    <script src="http://petlatkea.dk/2018/front/foobar.js"></script>
+</head>
+
+<body>
+    <!-- Header section/logo -->
+    <h1 id="logo"> FooBar Dashboard </h1>
+    
+    <!-- General information-->
+    <h1 class = "title"> General Information </h1>
+    <div id = "generalInformation">
+        <h2> Customers in queue:        </h2>
+        <h2> Customers being served:    </h2>
+        <h2> Total customers:           </h2>
+        <h2> Total beers served:        </h2>
+        
+        <div id = "customersInQueue">      </div>
+        <div id = "customersBeingServed">  </div>
+        <div id = "totalCustomers">        </div>
+        <div id = "totalBeersServed">      </div>
+        
+        <h2> Average time in queue:     </h2>
+        <h2> Average beer per customer: </h2>
+        <h2> Beer of the day:           </h2>
+        <h2> Bartender of the day:      </h2>
+        
+        <div id = "averageTimeInQueue">    </div>
+        <div id = "averageBeerPerCustomer"></div>
+        <div id = "beerOfTheDay">          </div>
+        <div id = "bartenderOfTheDay">     </div>
+    </div>
+
+    <!-- BARTENDERS INFORMATION-->
+    <div id = "bartendersInformation">
+        <h1 class = "title"> Bartender Information </h1>
+        <div class="bartenders"></div>
+
+        <template class="bartendersTemplate">
+            <h2 class="bartendersName">  </h2>
+            <h2 class="statusDetail">    </h2>
+            <h2 class="bartendersStatus"></h2>
+        </template>
+    </div>
+
+    <!-- TAPS INFORMATION -->
+    <h1 class = "title">Taps Information</h1>
+    <div id="tapsInformation">
+        <div class="tapsStatus"></div>
+            <template class="tapsStatusTemplate">
+                <div class="tapsStatusWrap">
+                    <div class="capacity">
+                        <div class="tapsLevel"></div>
+                    </div>
+                    <span class="beer-tap-name">Name</span>
+                </div>
+            </template>
+    </div>
+    
+    <!-- BEER INFORMATION -->
+    <h1 class="title">Beer Information</h1>
+    <div id = "beerInformation">
+        <div class="beerInfo"></div>
+        <template class = "beerTemplate">
+            <div class = "individualBeerInfo">
+                <div class="boxLabel">
+                    <img class = "beerLabel" src = "">
+                </div>
+                <h1 class="beerName"></h1>
+                <h2 class="beerCategory"></h2>
+                <h2 class="modalAlcohol"></h2>
+                <h2 class = "modalDescription"></h2>
+                <button class="moreInfo">More</button>
+            </div>
+        
+    <!-- BEER MODAL-->
+            <article class="modalContent hide">
+                    <p class = "modalAroma"></p>
+                    <p class = "modalAppearance"></p>
+                    <p class = "modalFlavor"></p>
+                    <p class = "modalMouthFeel"></p>
+            </article>
+        </template>
+    </div>
+
+    <script src="javascript/main.js"></script>
+</body>
+</html>
